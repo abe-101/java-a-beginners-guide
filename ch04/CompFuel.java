@@ -45,5 +45,9 @@ class CompFuel {
 
         System.out.println("To go " + dist + " miles sportscar needs " +
                 gallons + " gallons of fuel.");
+<<<<<<< HEAD
         }
+=======
+=        }
+>>>>>>> 9616c86f11e5ec38a46591c39705eda98569051c
 }
