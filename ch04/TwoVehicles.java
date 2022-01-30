@@ -28,13 +28,11 @@ class TwoVehicles {
         sportscar.mpg = 12;
 
         // get the ranges
-        range1 = minivan.range();
-        range2 = sportscar.range();
 
         System.out.println("Minivan can carry " + minivan.passengers +
-                " with range of " + range1 + " Miles");
+                " with range of " + minivan.range() + " Miles");
         System.out.println("Sportcar can carry " + sportscar.passengers + 
-                " with range of " + range2 + " Miles");
+                " with range of " + sportscar.range() + " Miles");
 
     }
 }
