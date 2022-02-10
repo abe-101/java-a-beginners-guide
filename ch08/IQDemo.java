@@ -28,6 +28,11 @@ class FixedQueue implements ICharQ {
 
         return q[getloc++];
     }
+
+    // Reset Queue
+    public void reset() {
+        putloc = getloc = 0;
+    }
 }
 
 // A circular queue.
@@ -67,6 +72,11 @@ class CircularQueue implements ICharQ {
         if(getloc==q.length) getloc = 0; // loop back
         return ch;
     }
+
+    // Reset Queue
+    public void reset() {
+        putloc = getloc = 0;
+    }
 }
 
 // A dynamic queue.
@@ -104,6 +114,11 @@ class DynQueue implements ICharQ {
         }
 
         return q[getloc++];
+    }
+
+    // Reset Queue
+    public void reset() {
+        putloc = getloc = 0;
     }
 }
 
@@ -158,6 +173,11 @@ class CirDynQueue implements ICharQ {
         return ch;
     }
 
+    // Reset Queue
+    public void reset() {
+        putloc = getloc = 0;
+    }
+
 }
 
 
@@ -178,7 +198,7 @@ class IQDemo {
         // Put some characters into fixed queue.
         for(i=0; i < 10; i++)
             iQ.put((char) ('A' + i));
-
+        iQ.reset();
         // Show the queue
         System.out.print("Contents of fixed queue: ");
         for(i=0; i < 10; i++) {
