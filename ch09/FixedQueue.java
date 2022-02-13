@@ -24,7 +24,7 @@ public class FixedQueue implements ICharQ {
         throws QueueEmptyException {
 
         if(getloc == putloc) 
-           throws new QueueEmptyException();
+           throw new QueueEmptyException();
 
         return q[getloc++];
     }

@@ -1,7 +1,7 @@
 // An exception for queue-empty errors.
-public class QueueEmptyException extends Exeptions {
+public class QueueEmptyException extends Exception {
     
     public String toString() {
-        return "\nQueue is empty."
+        return "\nQueue is empty.";
     }
 }
